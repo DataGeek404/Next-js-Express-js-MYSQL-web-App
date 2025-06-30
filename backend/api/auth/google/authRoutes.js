@@ -23,7 +23,7 @@ passport.use(new GoogleStrategy({
         });
       }
       
-      // 3. Return user object
+      // 3. Return user object and handle any error that might occur
       return done(null, user);
     } catch (err) {
       return done(err);
